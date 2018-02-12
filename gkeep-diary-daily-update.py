@@ -18,6 +18,7 @@ logging.basicConfig(level=logging.DEBUG,
 logging.getLogger("selenium").setLevel(logging.WARNING)
 
 # Chromedriver file location.
+# TODO: replace custom info below with a configuratino method
 driver_location = r"C:\\Users\Spencer\Programming\cmd\chromedriver.exe"
 
 # Opt for headless and English language
@@ -25,6 +26,7 @@ options = webdriver.ChromeOptions()
 # logging.debug('running headless')
 # options.set_headless(headless=True)
 options.add_argument('--lang=en-GB')  # en-US didn't work, so used GB
+# TODO: replace custom data below with a configuration method
 options.add_argument(r"user-data-dir=C:\Users\Spencer\AppData\Local\Google\Chrome\User Data\Default")
 
 # Find webdriver.Chrome wherever saved locally.
